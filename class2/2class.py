@@ -26,7 +26,7 @@ resta = numero1 - numero2
 multiplicacion = numero1 * numero2
 division = numero1 / numero2
 
-# print("Suma: ", suma)
+print("Suma: ", suma)
 print(f"REsta: {resta}")
 print(f"multiplicacion: {multiplicacion}")
 print(f"division: {division}")
