@@ -4,7 +4,7 @@
 # los diccionarios tienen un indice o id y un valor que es la variable
 # los json estan basados en diccionarios
 
-estudiantes = []
+estudiantes = [ ]
 cursos = ['Java', 'Python']
 docentes = []
 horarios = []
@@ -111,4 +111,4 @@ while True:
         break
     else:
         print("ha ingresado una opcion no valida papyyy")       
-            
+        
