@@ -1,4 +1,5 @@
 #listas  ## 
+# las listas puede ser ilegible y duro de manejar . 
 nombres = ['Ana', 'Sebastian', 'Santiago','Linda']
 # el punto de partida es 0 
 # el punto de finalizacion es uno antes. 
