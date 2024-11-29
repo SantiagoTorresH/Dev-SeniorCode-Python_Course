@@ -1,0 +1,4 @@
+Nombre: taks
+Fecha limite: 01/03/2018categoria: estudio
+Horas dedicadas: [4.0, 8.0, 1.0]
+

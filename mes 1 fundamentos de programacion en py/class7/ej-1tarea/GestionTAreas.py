@@ -30,7 +30,7 @@ def agregarTarea(listaTareas):
         horasDedicadas = list(map(float, horasDedicadas_str.split(","))) # separa con comas los numeros que ingreso, se le pasa que es float, el map sefara lo que aparentemente era flotante y lo convierte en una lista separadas por comas. 
     # antes del map todo era un solo numero, el map los coge y separa cada numero y los agrega a la lista. 
     except ValueError:
-        print("fecha no valida.")    
+        print(" no valida.")    
         return
         
 # crear un objeto y lo agrega a la lista de tareas # el objeto es tarea 
@@ -102,3 +102,5 @@ def menu():
         else:
             print("Ingrese una opcion valida")    
             
+if __name__ == "__main__":
+    menu()               
