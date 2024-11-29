@@ -1,0 +1,6 @@
+def __init__(self, atributo1, atributo2): # metodo constructor
+    self.atributo1 = atributo1
+    self.atributo2 = atributo2
+    
+def comportamientoFuncionDefinicion (self):
+    pass    
