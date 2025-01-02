@@ -1,0 +1,50 @@
+Ejercicios de Programación Orientada a Objetos en Python - Dificultad: Básico
+
+Ejercicios Básicos
+
+  1. Clase `Libro`: Crea una clase llamada `Libro` que tenga los atributos: Título y Autor. Implementa un método `descripcion` que devuelva un texto como: `"El libro [Título] fue escrito por [Autor]."`
+2. Clase `Persona`: Diseña una clase `Persona` con los atributos: Nombre y Edad. Incluye un método `es_mayor_de_edad` que retorne `True` si la edad es 18 o mayor, de lo contrario, `False`.
+3. Clase `Rectangulo`: Crea una clase `Rectangulo` con: Atributos: `largo`, `ancho`. Métodos: `area` (calcula el área del rectángulo).  
+  Ejemplo:  
+  rect = Rectangulo(5, 4)
+  print(rect.area())  # Salida: 20
+4. Clase `Coche`: Crea una clase `Coche` con los atributos: Marca y Modelo. Incluye un método `arrancar` que imprima:  `"El coche [Marca] modelo [Modelo] está arrancando."`
+5. Clase `Calculadora`: Diseña una clase `Calculadora` con un método estático `suma` que reciba dos números y devuelva la suma de ellos.
+  Ejemplo:  
+  print(Calculadora.suma(3, 4))  # Salida: 7
+Ejercicios Intermedios
+
+1. Clase `Banco`: Implementa una clase `Banco` con: Atributo de clase `tasa_interes`. Método de clase `actualizar_tasa(nueva_tasa)`.  Método `calcular_interes(monto)` que calcule el interés sobre un monto basado en la tasa actual.
+2. Herencia: Clase `Vehiculo` y `Moto`: Crea una clase base `Vehiculo` con los atributos: Tipo y Marca. Crea una subclase `Moto` que herede de `Vehiculo` y tenga un método `hacer_wheelie` que imprima:  `"¡La moto [Marca] está haciendo un wheelie!"`
+3. Clase `Empleado`: Diseña una clase `Empleado` con atributos: Nombre y Salario. Incluye un método `aumentar_salario` que aumente el salario en un porcentaje dado como argumento.
+  Ejemplo:  
+  emp = Empleado("Luis", 2000)
+  emp.aumentar_salario(10)  # Incrementa el salario un 10%
+  print(emp.salario)  # Salida: 2200
+4. Clase `CuentaBancaria`: Implementa una clase `CuentaBancaria` con: Atributos: `saldo`. Métodos: `depositar(cantidad)` y `retirar(cantidad)` con validaciones. Si intentas retirar más del saldo disponible, debe imprimir: `"Fondos insuficientes."`  
+5. Sistema de Inventario Simple: Diseña una clase `Producto` con: Nombre y Precio. Luego, implementa una clase `Inventario` que administre una lista de productos. Incluye métodos para: 
+  - Agregar un producto.
+  - Mostrar la lista de productos.
+  - Calcular el valor total del inventario.
+Recursos para Consultas y Aprendizaje
+
+1. Libros
+  - "Automate the Boring Stuff with Python" por Al Sweigart: Excelente para aprender programación con Python, incluye capítulos de POO.  
+  - "Python Crash Course" por Eric Matthes: Fácil de seguir, incluye ejercicios y ejemplos claros de POO.  
+  - "Learning Python" por Mark Lutz: Un libro más extenso, ideal para profundizar.
+
+2. Sitios Web
+  - [Real Python](https://realpython.com/): Excelente para tutoriales detallados, con artículos sobre clases y objetos. 
+  - [W3Schools Python OOP](https://www.w3schools.com/python/python_classes.asp): Explicaciones básicas y ejemplos prácticos de POO.  
+  - [GeeksforGeeks](https://www.geeksforgeeks.org/python-object-oriented-programming/): Recursos detallados con ejemplos y soluciones paso a paso.
+
+3. Cursos en Línea
+  - [Coursera - Python for Everybody](https://www.coursera.org/specializations/python): Incluye un módulo dedicado a POO.
+  - [EdX - Introduction to Python](https://www.edx.org/learn/python): Curso gratuito que cubre POO en Python.
+  - [Kaggle Python Exercises](https://www.kaggle.com/learn/python): Ofrece notebooks interactivos con ejercicios prácticos.
+
+4. Recursos Visuales
+  - YouTube:
+  - [Corey Schafer's Python OOP Playlist](https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU): Explicaciones claras con ejemplos prácticos.  
+  - [Tech with Tim](https://www.youtube.com/c/TechWithTim): Tutoriales de POO en Python para principiantes e intermedios.  
+  - Diagrams.net (anteriormente Draw.io): Útil para crear diagramas UML y explicar visualmente las relaciones entre clases y objetos.
