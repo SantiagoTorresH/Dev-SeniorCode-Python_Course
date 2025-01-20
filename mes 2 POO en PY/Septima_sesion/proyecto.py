@@ -131,7 +131,7 @@ class SistemaVeterinaria:
             
             #fecha hora, servicio veterinarioa
             fecha = input("Ingrese la fecha (AAAA-MM-DD): ").strip()
-            hora = input("ingrese la hotra (HH-MM): ").strip()
+            hora = input("ingrese la hora (HH-MM): ").strip()
             servicio = input("Ingrese el servicio (consulta, vacunacion, etc)").strip()
             veterinario = input("Ingrese el nombre del veterinario:").strip()
             
