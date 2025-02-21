@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./mes_3_depuracion/05_Quinta_/src"
+    ]
+}

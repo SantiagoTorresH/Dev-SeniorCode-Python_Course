@@ -18,7 +18,7 @@ logging.critical("Este mensaje es   CRITICO")
 # Esta app, egistraada la cantidad de prodctos, conprados,confirmacion de compra y error  en estas transacciones
 
 
-logging.basisConfig(
+logging.basicConfig(
     level= logging.DEBUG, 
     format= '%(asctime)s - %(level)s - %(mensaje)s', 
     filename="registro.log", 
@@ -28,9 +28,9 @@ logging.basisConfig(
 
 @dataclass
 class Producto:
-    nombre = str
-    precio = float
-    cantidad = int
+    nombre: str
+    precio: float
+    cantidad:  int
     
     def comprar(self, cantidad: int):
         if cantidad > self.cantidad:
@@ -51,36 +51,32 @@ class Tienda:
     
     def agregar_producto(self, producto: Producto):
         self.productos.append(producto)
-        logging.debug(f"{producto.nombre} fue agregado con exito, el precio es de {producto}"
-        
-        
-        
-        
-
-        
-@dataclass
-class Tienda:
-    productos: list[Producto] = field(default_factory=list)
-    def agregar_producto(self, producto: Producto):
-        self.productos.append(producto)
         logging.debug(f"{producto.nombre} fue agregado con exito, el precio es de {producto.precio} - Cantidad: {producto.cantidad} unidades en stock")
+        
     def realizar_compra(self, nombre_producto: str, cantidad: int):
         producto = next((p for p in self.productos if p.nombre == nombre_producto), None)
-        if producto : # si producto es igual a True
-            try:
+        if producto: 
+            try: 
                 total = producto.comprar(cantidad)
-                logging.info(f"Compra realizada: {cantidad} unidades de {nombre_producto} por un total de ${total}")
+                logging.info(f"compra realizada: { cantidad} unidades de  {nombre_producto} con un total de  {total}")
                 return total
             except ValueError as e:
-                logging.error(f"Error al efectuar la compra: {e}")
-            else:
-                logging.warning(f"El producto esta fuera de stock")
+                logging.error(f"Error al efectuar la compra: {e}")  
+        else:
+            logging.warning(f"El produducto esta fuera de stock")
+            
 if __name__ == "__main__":
-    tienda = Tienda()
-    inventario_portatil = Producto(nombre = "Portatil", precio=1000, cantidad=10)
-    tienda.agregar_producto(inventario_portatil)
-    tienda.realizar_compra("Portatil", 4)
     
-    inventario_teclado = Producto(nombre = "Teclado", precio=50, cantidad=5)
+    tienda = Tienda()
+    
+    inventario_portatil = Producto(nombre= "Portatil", precio=1000, cantidad=10 )
+    tienda.agregar_producto(inventario_portatil)
+    tienda.realizar_compra("portatil", 4)
+    
+    
+    inventario_teclado = Producto(nombre= "teclado", precio=445, cantidad=140 )
     tienda.agregar_producto(inventario_teclado)
-    tienda.realizar_compra("Teclado", 10)            
+    tienda.realizar_compra("teclado", 4)
+        
+                
+        
