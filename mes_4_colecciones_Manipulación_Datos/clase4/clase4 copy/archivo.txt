@@ -1,0 +1,4 @@
+Función generadora (leer_lineas_archivo): Esta función utiliza un generador con yield para producir cada línea del archivo cuando se necesite.
+Manejo del archivo: Usamos open para abrir el archivo en modo lectura ('r'), y luego iteramos sobre cada línea del archivo.
+Uso de yield: En lugar de devolver todas las líneas de una vez, yield entrega una línea a la vez y mantiene el estado del generador. Esto es muy eficiente, ya que no se carga todo el archivo en memoria.
+Iteración: Al usar el generador en un bucle for, las líneas del archivo se leen y se procesan una por una.
